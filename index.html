@@ -7,12 +7,222 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column h-100 bg-white text-dark">
 
+  <header class="sr-only">
+    <h1>Freshnesecom - Products</h1>
+  </header>
+
+  <!-- SITE-MAIN -->
+
+  <main class="site-main">
+    <section class="container-lg">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb  bg-white">
+            <li class="breadcrumb-item"><a class="text-muted" href="#">Homepage</a></li>
+            <li class="breadcrumb-item"><a class="text-muted" href="#">Fruit and vegetables</a></li>
+            <li class="breadcrumb-item active text-dark" aria-current="page">Carrots from Tomissy Farm</li>
+          </ol>
+        </nav>
+      <div class="row">
+        <div class="col-5">
+          <img class="d-block img-fluid w-100 mb-3 rounded-lg" src="./img/foto-food.jpg" alt="Photo of food" width="569" height="436">
+          <img class="d-block img-fluid w-100 mb-3 rounded-lg" src="./img/foto-food.jpg" alt="Photo of food" width="569" height="436">
+          <img class="d-block img-fluid w-100 mb-3 rounded-lg" src="./img/foto-food.jpg" alt="Photo of food" width="569" height="436">
+        </div>
+        <div class="col-7">
+          <h2 class="font-weight-bold">Carrots from Tomissy Farm</h2>
+          <div class="row container-lg align-items-center">
+            <div class="product__rating">
+              <img src="./img/icon-star-white.svg" width="108" height="20" alt="Star 4">
+              <img class="product__rating-star" style="--star-count: 4" src="./img/icon-star-yellow.svg" width="108" height="20" alt="" aria-hidden="true">
+            </div>
+            <span class="text-black-50 ml-2"><u>(1 customer review)</u></span>
+          </div>
+          <p class="my-4">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+          <div class="row">
+            <div class="col-6">
+              <dl>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">SKU:</dt>
+                  <dd class="mb-0 font-weight-normal">76645</dd>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Category:</dt>
+                  <dd class="mb-0 font-weight-normal"><u>Vegetables</u></dd>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Stock:</dt>
+                  <dd class="mb-0 font-weight-normal text-success"><u>In Stock</u></dd>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Farm:</dt>
+                  <dd class="mb-0 font-weight-normal">Grocery Tarm Fields</dd>
+                </div>
+              </dl>
+
+            </div>
+            <div class="col-6">
+              <dl>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Freshness:</dt>
+                  <dd class="mb-0 font-weight-normal">1 days old</dd>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Buy by:</dt>
+                  <dd class="mb-0 font-weight-normal">pcs, kgs, box, pack</dd>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Delivery:</dt>
+                  <dd class="mb-0 font-weight-normal">in 2 days</dd>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <dt class="mr-2 text-secondary font-weight-normal">Delivery area:</dt>
+                  <dd class="mb-0 font-weight-normal">Czech republic</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="row align-items-center justify-content-between border rounded-lg py-3 px-3 mb-3">
+              <div class="col-4">
+                <p class="cart__price-title m-0 text-success font-weight-bold font h2">36.23 USD</p>
+                <p class="cart__price-discount m-0 text-muted"><del>48.56 USD</del></p>
+              </div>
+
+              <div class="col-6">
+                <div class="row align-items-center">
+                  <div class="cart__price-select bg-light rounded-pill border-secondary align-items-center py-2 px-4 mr-5">
+                      <span class="cart__price-caption border-right pr-4">1</span>
+                      <select class="border-0 bg-light" name="products__count">
+                        <option value="Pcs" selected disabled>Pcs</option>
+                        <option value="one">1</option>
+                        <option value="one">5</option>
+                        <option value="one">10</option>
+                        <option value="one">15</option>
+                        <option value="one">30</option>
+                      </select>
+                  </div>
+                  <button class="btn btn-success font-weight-bolder d-inline-flex rounded-pill">+ Add to cart</button>
+                </div>
+              </div>
+          </div>
+          <button class="btn font-weight-bolder mr-5"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.87281 3.76001C9.50933 3.12349 10.3726 2.7659 11.2728 2.7659C12.173 2.7659 13.0363 3.12349 13.6728 3.76001C14.3093 4.39653 14.6669 5.25984 14.6669 6.16001C14.6669 7.06019 14.3093 7.92349 13.6728 8.56001L12.7995 9.43334L7.99948 14.2333L3.19948 9.43334L2.32614 8.56001C1.68962 7.92349 1.33203 7.06019 1.33203 6.16001C1.33203 5.25984 1.68962 4.39653 2.32614 3.76001C2.96266 3.12349 3.82597 2.7659 4.72614 2.7659C5.62632 2.7659 6.48962 3.12349 7.12614 3.76001L7.99948 4.63334L8.87281 3.76001Z" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg> Add to my wish list</button>
+
+          <button class="btn font-weight-bolder"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)">
+              <path d="M6.33398 1.83331H3.66732C2.93094 1.83331 2.33398 2.43027 2.33398 3.16665V5.83331C2.33398 6.56969 2.93094 7.16665 3.66732 7.16665H6.33398C7.07036 7.16665 7.66732 6.56969 7.66732 5.83331V3.16665C7.66732 2.43027 7.07036 1.83331 6.33398 1.83331Z"stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6.33398 9.83331H3.66732C2.93094 9.83331 2.33398 10.4303 2.33398 11.1666V13.8333C2.33398 14.5697 2.93094 15.1666 3.66732 15.1666H6.33398C7.07036 15.1666 7.66732 14.5697 7.66732 13.8333V11.1666C7.66732 10.4303 7.07036 9.83331 6.33398 9.83331Z" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13.668 11.1665H9.66797" stroke="#E6704B" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.3346 13.8333H9.66797" stroke="#E6704B" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.3346 5.83331H9.66797" stroke="#E6704B" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M13.668 3.16647H9.66797" stroke="#E6704B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g><defs><clipPath id="clip0"><rect width="16" height="16" fill="white" transform="translate(0 0.5)" /></clipPath>
+            </defs></svg> Compare</button>
+
+
+          <div class="product__tabs mt-5">
+
+            <ul class="nav nav-tabs flex-nowrap mb-3" id="myTab" role="tablist">
+              <li class="nav-item flex-shrink-0" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+              </li>
+              <li class="nav-item flex-shrink-0" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Reviews <span class="badge badge-success">18</span></a>
+              </li>
+              <li class="nav-item flex-shrink-0" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Questions <span class="badge badge-success">4</span></a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><div>
+                <h3 class="h5">Origins</h3>
+                <p class="mb-4">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t
+                  grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever
+                  possible.
+                </p>
+                <h3 class="h5">How to cook</h3>
+                <p class="mb-4">From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to
+                  an enormous number of recipes.</p>
+
+                <h3 class="h5 mb-4">Full of Vitamins!</h3>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Vitamins</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">% DV</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-black-50">
+                    <tr>
+                      <td>Vitamin A equiv.</td>
+                      <td>735 μg</td>
+                      <td>104 %</td>
+                    </tr>
+                    <tr>
+                      <td>Thiamine(B1)</td>
+                      <td>0.066 mg</td>
+                      <td>6 %</td>
+                    </tr>
+                    <tr>
+                      <td>Niacin (B3)</td>
+                      <td>0.983 mg</td>
+                      <td>7 %</td>
+                    </tr>
+                    <tr>
+                      <td>Vitamin A equiv.</td>
+                      <td>19 μg</td>
+                      <td>5 %</td>
+                    </tr>
+                    <tr>
+                      <td>Thiamine (B1)</td>
+                      <td>5.9 mg</td>
+                      <td>7 %</td>
+                    </tr>
+                    <tr>
+                      <td>Niacin (B3)</td>
+                      <td>0.66 mg</td>
+                      <td>4 %</td>
+                    </tr>
+                    <tr>
+                      <td>Vitamin A equiv.</td>
+                      <td>13.2</td>
+                      <td>13 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div></div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h2>HALI TO'LDIRILMAGAN )</h2>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h2>BU YER HAM HALI TO'LDIRILMAGAN )</h2>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
 
   <footer class="site-footer py-3 mt-auto text-center bg-white">
-    <div class="container">
+    <div class="container-lg">
       <p class="mb-0 small">Copyright &copy; Asrorxuja.</p>
     </div>
   </footer>
