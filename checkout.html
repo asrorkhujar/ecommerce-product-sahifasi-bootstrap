@@ -116,15 +116,35 @@
             <h2 class="font-weight-bolder">Payment method</h2>
           <div class="d-flex align-items-center justify-content-between">
             <p class="text-black-50">Please enter your payment method</p>
-            <span class="text-black-50">Step 2 of 5</span>
+            <span class="text-black-50">Step 3 of 5</span>
           </div>
           <div class="custom-control custom-radio mb-3 bg-light rounded-lg mt-4 border border-light">
-            <div class="credit-card-wrapper">
+            <div class="credit-card-wrapper bg-white">
               <input type="radio" id="customRadio3" name="customRadioPayment" class="custom-control-input">
               <label class="custom-control-label d-flex align-items-center justify-content-between h6" for="customRadio3">Credit card<span><span>
                 <svg width="49" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M21.233 15.77h-3.97L19.747.28h3.97l-2.483 15.49zM35.622.66a9.706 9.706 0 00-3.56-.66c-3.92 0-6.68 2.109-6.697 5.124-.033 2.225 1.976 3.46 3.478 4.202 1.536.758 2.058 1.253 2.058 1.928-.016 1.038-1.24 1.516-2.384 1.516-1.584 0-2.434-.246-3.724-.824l-.523-.247-.555 3.477c.93.428 2.646.807 4.427.824 4.165 0 6.876-2.076 6.908-5.29.016-1.763-1.045-3.114-3.332-4.218-1.388-.708-2.238-1.186-2.238-1.911.016-.66.719-1.335 2.286-1.335a6.693 6.693 0 012.957.593l.359.165.54-3.345zM40.899 10.282c.327-.89 1.585-4.333 1.585-4.333-.017.033.326-.907.522-1.483l.277 1.334s.752 3.708.915 4.482H40.9zm4.9-10.001h-3.07c-.947 0-1.667.28-2.075 1.285l-5.896 14.203h4.165l.833-2.323h5.096c.114.543.474 2.323.474 2.323H49L45.799.281zM13.948.28l-3.887 10.562L9.636 8.7C8.918 6.23 6.664 3.543 4.148 2.208L7.71 15.753h4.197L18.146.28h-4.198z" fill="#00579F"/><path d="M6.452.28H.065L0 .595C4.982 1.879 8.281 4.977 9.637 8.7L8.248 1.583C8.02.593 7.318.313 6.452.28z" fill="#F4A622"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h49v16H0z"/></clipPath></defs></svg></span>
                 <span>
                   <svg width="33" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.962 2.139h-8.923V17.86h8.923V2.14z" fill="#FF5F00"/><path d="M12.605 10c0-3.194 1.53-6.028 3.88-7.861A10.261 10.261 0 0010.197 0C4.56 0 0 4.472 0 10s4.56 10 10.197 10c2.38 0 4.56-.806 6.288-2.139A9.916 9.916 0 0112.605 10z" fill="#EB001B"/><path d="M33 10c0 5.528-4.561 10-10.198 10-2.38 0-4.56-.806-6.288-2.139 2.379-1.833 3.88-4.667 3.88-7.861s-1.53-6.028-3.88-7.861A10.261 10.261 0 0122.802 0c5.637 0 10.197 4.5 10.197 10z" fill="#F79E1B"/></svg></span></span></label>
+
+                  <div class="mt-3 mb-3">
+                    <label class="h6" for="validationDefault09">Card number</label>
+                    <input type="text" class="form-control bg-light rounded-lg" id="validationDefault09" placeholder="Card number" required>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label class="h6" for="validationDefault10">Card holder</label>
+                      <input type="text" class="form-control bg-light rounded-lg" id="validationDefault10" placeholder="Card holder" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label class="h6" for="validationDefault11">Expiration date</label>
+                      <input type="date" class="form-control bg-light rounded-lg" id="validationDefault11" placeholder="DD/MM/YY" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label class="h6" for="validationDefault12">CVC</label>
+                      <input type="text" class="form-control bg-light rounded-lg" id="validationDefault12" placeholder="CVC" required>
+                    </div>
+                  </div>
             </div>
           </div>
           <div class="custom-control custom-radio mb-3 bg-light rounded-lg ">
@@ -139,10 +159,50 @@
           </div>
           </div>
 
+          <div class="additional-info mt-5">
+            <h2 class="font-weight-bolder">Additional informations</h2>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="text-black-50">Need something else? We will make it for you!</p>
+            <span class="text-black-50">Step 4 of 5</span>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Order notes</label>
+            <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+          </div>
+          </div>
 
+          <div class="confirmation">
+            <h2 class="font-weight-bolder">Confirmation</h2>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="text-black-50">We are getting to the end. Just few clicks and your order si ready!</p>
+            <span class="text-black-50">Step 5 of 5</span>
+          </div>
 
+          <div class="form-group mb-5">
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input" type="checkbox" id="invalidCheck15" required>
+              <label class="form-check-label" for="invalidCheck15">
+                I agree with sending an Marketing and newsletter emails. No spam, promissed!
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input" type="checkbox" id="invalidCheck16" required>
+              <label class="form-check-label" for="invalidCheck16">
+                I agree with our <u>terms and conditions</u> and <u>privacy policy</u>.
+              </label>
+            </div>
+          </div>
+          </div>
         <button class="btn btn-primary bg-success" type="submit">Complete order</button>
       </form>
+
+      <div class="col-5 security-info mt-5">
+        <span>
+          <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.053 5.96a9.8 9.8 0 01-2.667-.213 9.947 9.947 0 01-2.92-1.587 19.873 19.873 0 01-2.133-1.747 1.533 1.533 0 00-2.093 0 24.1 24.1 0 01-2.054 1.72 10.36 10.36 0 01-2.933 1.627c-.997.225-2.02.306-3.04.24a22.96 22.96 0 01-2.493-.24 1.52 1.52 0 00-1.734 1.333c-.066.64-.24 2.307-.32 4.16-.112 1.852.005 3.71.347 5.534a17.332 17.332 0 005.133 7.8 42.783 42.783 0 006.16 4.826 3.533 3.533 0 004 0 42.504 42.504 0 005.814-4.893 17.733 17.733 0 004.84-7.68" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.666 14.667l3.813 3.813a.253.253 0 00.374 0L29.333 8" stroke="#6A983C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h2 class="h6 mt-2 font-weight-bolder">All your data are safe</h2>
+        <p>We are using the most advanced security to provide you the best experience ever.</p>
+      </div>
     </div>
 
 
