@@ -34,3 +34,7 @@
 }
 
 /* CHECKOUT-PAGE */
+
+.total-order-info__header-text {
+  font-size: 12px;
+}
